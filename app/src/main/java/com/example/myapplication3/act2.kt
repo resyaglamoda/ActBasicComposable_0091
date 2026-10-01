@@ -194,4 +194,19 @@ fun PreviewTataLetakColumnRow() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun PreviewTataLetakRowColumn() {
+    MyApplication3Theme {
+        TataLetakRowColumn()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewTataLetakBoxColumnRow() {
+    MyApplication3Theme {
+        TataLetakBoxColumnRow()
+    }
+}
 
