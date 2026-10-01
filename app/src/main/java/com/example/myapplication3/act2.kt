@@ -160,9 +160,12 @@ fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
     }
 }
 
+// PREVIEW
 
-
-
-
-
-
+@Preview(showBackground = true)
+@Composable
+fun PreviewSemuaLayout() {
+    MyApplication3Theme {
+        TampilkanSemuaLayout()
+    }
+}
