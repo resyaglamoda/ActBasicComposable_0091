@@ -41,3 +41,21 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+// WRAPPER: Menampilkan semua layout dalam satu Scroll
+
+@Composable
+fun TampilkanSemuaLayout(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+    ) {
+        ContohColumn()
+        ContohRow()
+        TataLetakColumnRow(modifier = Modifier)
+        TataLetakRowColumn(modifier = Modifier)
+        TataLetakBoxColumnRow(modifier = Modifier)
+    }
+}
+
