@@ -71,3 +71,18 @@ fun ContohColumn() {
         Text("Resya")
     }
 }
+
+// 2. CONTOH ROW
+
+@Composable
+fun ContohRow() {
+    val kata = stringResource(id = R.string.kata)
+    Row(
+        modifier = Modifier
+            .padding(top = 60.dp, start = 60.dp)
+            .fillMaxWidth()
+    ) {
+        Text(text = "Hello ")
+        Text(text = kata)
+    }
+}
