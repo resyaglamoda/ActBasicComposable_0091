@@ -178,3 +178,11 @@ fun PreviewContohColumn() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun PreviewContohRow() {
+    MyApplication3Theme {
+        ContohRow()
+    }
+}
+
