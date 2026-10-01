@@ -59,3 +59,15 @@ fun TampilkanSemuaLayout(modifier: Modifier = Modifier) {
     }
 }
 
+// 1. CONTOH COLUMN
+
+@Composable
+fun ContohColumn() {
+    Column(
+        modifier = Modifier
+            .padding(top = 20.dp, start = 20.dp)
+    ) {
+        Text("Hello")
+        Text("Resya")
+    }
+}
