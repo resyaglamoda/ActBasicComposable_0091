@@ -135,6 +135,31 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
     }
 }
 
+// 5. TATA LETAK BOX > COLUMN > ROW
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
+    Column(modifier = modifier.fillMaxWidth()) {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 110.dp)
+                .background(Color(0xFF008080)), // Teal via hex
+            contentAlignment = Alignment.Center
+        ) {
+            Column {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1", color = Color.White)
+                    Text(text = "Col1_Row1_Komponen2", color = Color.White)
+                    Text(text = "Col1_Row1_Komponen3", color = Color.White)
+                }
+            }
+        }
+    }
+}
+
 
 
 
