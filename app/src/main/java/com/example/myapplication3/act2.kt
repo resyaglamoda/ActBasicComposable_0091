@@ -86,3 +86,18 @@ fun ContohRow() {
         Text(text = kata)
     }
 }
+
+// 3. TATA LETAK COLUMN > ROW
+@Composable
+fun TataLetakColumnRow(modifier: Modifier = Modifier) {
+    Column(modifier = modifier.fillMaxWidth()) {
+        // Baris 1
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
+        }
+
