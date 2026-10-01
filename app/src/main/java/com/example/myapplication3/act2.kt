@@ -186,3 +186,12 @@ fun PreviewContohRow() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun PreviewTataLetakColumnRow() {
+    MyApplication3Theme {
+        TataLetakColumnRow()
+    }
+}
+
+
