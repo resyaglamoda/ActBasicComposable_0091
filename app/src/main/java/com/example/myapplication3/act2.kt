@@ -169,3 +169,12 @@ fun PreviewSemuaLayout() {
         TampilkanSemuaLayout()
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewContohColumn() {
+    MyApplication3Theme {
+        ContohColumn()
+    }
+}
+
