@@ -26,3 +26,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapplication3.ui.theme.MyApplication3Theme
 
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            MyApplication3Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    TampilkanSemuaLayout(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
