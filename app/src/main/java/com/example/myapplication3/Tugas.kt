@@ -114,6 +114,22 @@ fun Tugas(modifier: Modifier = Modifier) {
 
             Spacer(modifier = Modifier.height(30.dp))
 
+            // Gambar Ka'bah dalam lingkaran
+            TugasLogin()
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewTugas() {
+    MyApplication3Theme {
+        Tugas()
+    }
+}
+
+
+
 
 
 
