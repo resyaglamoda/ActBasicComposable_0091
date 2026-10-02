@@ -22,4 +22,12 @@ fun TugasLogin(modifier: Modifier = Modifier) {
     )
 }
 
+@Preview(showBackground = true)
+@Composable
+fun PreviewTugasLogin() {
+    MyApplication3Theme {
+        TugasLogin()
+    }
+}
+
 
