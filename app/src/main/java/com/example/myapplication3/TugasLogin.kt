@@ -11,3 +11,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapplication3.ui.theme.MyApplication3Theme
 
+@Composable
+fun TugasLogin(modifier: Modifier = Modifier) {
+    Image(
+        painter = painterResource(id = R.drawable.kabah),
+        contentDescription = "Gambar Ka'bah",
+        modifier = modifier
+            .size(200.dp)
+            .clip(CircleShape)
+    )
+}
+
+
