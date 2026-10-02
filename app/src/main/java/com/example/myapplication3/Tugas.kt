@@ -94,3 +94,15 @@ fun Tugas(modifier: Modifier = Modifier) {
                 color = Color.Red
             )
 
+            // Nama Mahasiswa
+            Text(
+                text = "Resya Glamoda",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+
+
+
+
