@@ -74,3 +74,23 @@ fun Tugas(modifier: Modifier = Modifier) {
             )
 
             Spacer(modifier = Modifier.height(30.dp))
+
+            // Logo UMY
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Logo UMY",
+                modifier = Modifier
+                    .size(120.dp)
+                    .clip(CircleShape)
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            // Label "Nama"
+            Text(
+                text = "Nama",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+
