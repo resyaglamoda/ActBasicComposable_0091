@@ -25,3 +25,52 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapplication3.ui.theme.MyApplication3Theme
 
+
+@Composable
+fun Tugas(modifier: Modifier = Modifier) {
+    // Box sebagai background utama (foto)
+    Box(modifier = modifier.fillMaxSize()) {
+
+        // Background foto (gambar masjid / kabah)
+        Image(
+            painter = painterResource(id = R.drawable.background),
+            contentDescription = "Background",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+        // Overlay gelap tipis supaya teks terbaca (opsional)
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color(0x66000000)) // hitam transparan 40%
+        )
+
+        // Konten utama di atas background
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(modifier = Modifier.height(40.dp))
+
+            // Judul "Login"
+            Text(
+                text = "Login",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // Subjudul
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.White,
+                textAlign = TextAlign.Center
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
