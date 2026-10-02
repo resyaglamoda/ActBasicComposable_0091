@@ -10,3 +10,18 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.myapplication3.ui.theme.MyApplication3Theme
 
+class TataLetakActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            MyApplication3Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Tugas(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
